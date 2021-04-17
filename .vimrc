@@ -3,7 +3,7 @@
 " STARTUP
 
 let mapleader = " " 
-syntax on			     "ADDED LATER
+"syntax on			    
 
 
 " SET 
@@ -16,8 +16,6 @@ set spelllang=en_gb                  "closest to Indian
 
 colorscheme nord
 
-"save https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/colors/nord.vim 
-"to ~/.vim/colors/ or ~/vimfiles/colors/
 
 if exists('+termguicolors')
     set termguicolors              "16 million colours' support
@@ -25,4 +23,5 @@ endif
 
 " MAP 
 
-nmap <Leader>, :vs $MYVIMRC<CR>
+"nmap <Leader>, :vs $MYVIMRC<CR>
+"nmap <F5> :source $MYVIMRC<CR>
