@@ -34,4 +34,4 @@ endif
 
 "nmap <Leader>, :vs $MYVIMRC<CR>
 "nmap <F5> :source $MYVIMRC<CR>
-
+"Some stuff here.

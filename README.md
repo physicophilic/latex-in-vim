@@ -52,4 +52,4 @@ To open `vimtutor` open your terminal and type vimtutor, and it should open.
 
 
 
-
+Some stuff here.
