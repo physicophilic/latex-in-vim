@@ -17,31 +17,61 @@ author: Manish RC
 
 # This time
 
-- Git
-- vim-plug
-- Installing UltiSnips, python3, zathura/alternative, vimtex
-- Setting up UltiSnips
+- Intro to git
+- .vim via git
+- Installing plugins
+- Starting snippets
 
 ---
 
-# Outline
+# Prerequisites:
 
-So how can I do this. Why is git necessary now? vim plug download karna hai. It is appropriate to teach them now. Fine.
-New pieces in this vimrc.
+- Install git
+- Install python3 
 
-```
-"syntax on			    
-...
-...
-" MAP 
+PDF Viewers
+- Install zathura for linux (sudo apt install zathura)
+- Install skim for macOS (brew install skim)
+- Get 32-bit portable SumatraPDF for windows from its website, and save executable at a location you know.
 
-"nmap <Leader>, :vs $MYVIMRC<CR>
-"nmap <F5> :source $MYVIMRC<CR>
-
-```
-Explaining the concept of mapping is necessary here.
-
-Doing git pull is absolutely essential. But 
+------
 
 
+# .vim from github
 
+- substituting earlier .vim 
+    * Rename the first .vim, and .vimrc
+    * Clone
+        + git clone https://github.com/physicophilic/vim-course ~/.vim # for unix/linux 
+        + windows users download from web. 
+    * Explain .vimrc or .vim/vimrc
+    * Warning: don't add custom changes here. If you want that, keep this folder only as a reference and continue with your earlier folder.
+
+-----
+
+# Concept of mapping
+
+- Idea
+    * mode: nmap/imap/..
+    * LHS
+    * RHS
+- Illustrate
+
+--------
+
+# Installing plugins
+
+- Get [vim-plug](https://github.com/junegunn/vim-plug)
+- Install UltiSnips
+
+
+# Intro to UltiSnips
+
+- UltiSnips settings
+- One example - writing comments in vimrc. 
+- Show Gilles' [snippets](https://github.com/gillescastel/latex-snippets/blob/master/tex.snippets) for reference
+
+
+# Next time
+
+- VimTeX setup
