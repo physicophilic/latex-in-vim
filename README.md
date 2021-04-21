@@ -16,11 +16,22 @@ This is stored in `.vim/colors`. You can see an example colorscheme in the `colo
 
 Note: on windows, `.vim` must be replaced by `vimfiles`. 
 
-Finally, you need to know where to put these `.vim` and `.vimrc` files: inside your home folder.
+## .vim, .vimrc location
+
+The `.vim` and `.vimrc` files must go inside your home folder.
 
 - On linux and macOS, there's a designated folder called home, accessed using `~/` in the terminal.
 - On windows, the home folder is `C:Drive/Users/YOUR_USERNAME/`. 
 
+From here onwards, I will use `~/` to denote home folder exclusively.
+
+**Alternative location on linux/macOS** 
+
+`~/.vimrc` can be moved to `~/.vim/vimrc`.
+
+Note that at the new location `.` gets removed. This is what we'll follow.
+
+For windows, analogously `~/.vim` -> `~/vimfiles/vimrc` should work, but I haven't tested it.
 
 ## Covering up for Lecture 1
 
