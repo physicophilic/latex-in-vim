@@ -62,3 +62,5 @@ let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips'] "FOR THE REST
 
 " INITIALIZE plugin system
 call plug#end()
+
+silent! source ~/.myvimrc         "Add your additions in this file
