@@ -2,10 +2,13 @@
 
 # What ?
 
-A simple setup for vim aimed at physicists and mathematicians. 
-To see exhibit a trailer of its power, here's a preview:
+A simple setup for vim aimed at doing LaTeX for scientists.
+Preview of LaTeX source
 
-![screencast](schrodinger.gif)
+![Schrodinger equation](schrodinger.mp4)
+
+
+
 
 
 
