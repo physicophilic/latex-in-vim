@@ -52,15 +52,13 @@ Plug 'lervag/vimtex'
 
 " SETTINGS FOR ULTISNIPS 
 
- let g:UltiSnipsExpandTrigger = '<Tab>'
- let g:UltiSnipsJumpForwardTrigger = '<Tab>'
- let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
- let g:UltiSnipsEditSplit = 'vertical'
- let g:UltiSnipsEnableSnipMate = 0
-" let g:UltiSnipsSnippetDirectories = [$HOME.'/vimfiles/UltiSnips'] "FOR
-" WINDOWS
-let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips'] "FOR THE
-" REST
+let g:UltiSnipsExpandTrigger = '<Tab>'
+let g:UltiSnipsJumpForwardTrigger = '<Tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
+let g:UltiSnipsEditSplit = 'vertical'
+let g:UltiSnipsEnableSnipMate = 0
+"let g:UltiSnipsSnippetDirectories = [$HOME.'/vimfiles/UltiSnips'] "FOR WINDOWS
+let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips'] "FOR THE REST
 
 " INITIALIZE plugin system
 call plug#end()
