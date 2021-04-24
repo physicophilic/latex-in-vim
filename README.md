@@ -18,8 +18,8 @@ A vim course for LaTeX
 
 ```
 # Linux/MacOS
-mv ~/.vimrc ~/.vimrc_backup
-mv ~/.vim ~/.vim_backup
+mv ~/.vimrc ~/.myvimrc
+mv ~/.vim ~/.myvim
 ```
 
 On windows use file browser to backup `vimfiles` and `.vimrc` from the `$HOME` folder
