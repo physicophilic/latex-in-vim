@@ -12,7 +12,7 @@
 " STARTUP
 
 let mapleader = " " 
-"syntax on			    
+syntax on			    
 
 
 " SET 
@@ -32,8 +32,8 @@ endif
 
 " MAP 
 
-"nmap <Leader>, :vs $MYVIMRC<CR>
-"nmap <F5> :source $MYVIMRC<CR>
+nmap <Leader>, :vs $MYVIMRC<CR>
+nmap <F5> :source $MYVIMRC<CR>
 
 
 " PLUGINS
@@ -41,26 +41,26 @@ endif
 " SPECIFY a directory for plugins
 " - AVOID using standard Vim directory names like 'plugin'
 
-" call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 " ULTISNIPS
 
 " MAKE sure you use single quotes
 
-" Plug 'SirVer/ultisnips' 
-" Plug 'lervag/vimtex'
+Plug 'SirVer/ultisnips'         
+Plug 'lervag/vimtex'         
 
 " SETTINGS FOR ULTISNIPS 
 
-" let g:UltiSnipsExpandTrigger = '<Tab>'
-" let g:UltiSnipsJumpForwardTrigger = '<Tab>'
-" let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
-" let g:UltiSnipsEditSplit = 'vertical'
-" let g:UltiSnipsEnableSnipMate = 0
+ let g:UltiSnipsExpandTrigger = '<Tab>'
+ let g:UltiSnipsJumpForwardTrigger = '<Tab>'
+ let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
+ let g:UltiSnipsEditSplit = 'vertical'
+ let g:UltiSnipsEnableSnipMate = 0
 " let g:UltiSnipsSnippetDirectories = [$HOME.'/vimfiles/UltiSnips'] "FOR
 " WINDOWS
-" let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips'] "FOR THE
+let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips'] "FOR THE
 " REST
 
 " INITIALIZE plugin system
-" call plug#end()
+call plug#end()
