@@ -11,6 +11,7 @@ A vim course for LaTeX
 - When magic conceal isn't enough: a **live** LaTeX preview using [this tool](https://github.com/iamcco/markdown-preview.nvim)
 - Vanilla LaTeX using the famous [VimTeX](https://github.com/lervag/vimtex) plugin
 
+See a preview [here](https://www.youtube.com/watch?v=hpQBHVaFE1I)
 
 ## Install
 
