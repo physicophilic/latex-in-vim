@@ -68,7 +68,6 @@ This file is being sourced in `vimrc` file at the end.
 For sake of simplicity, this will be the name of custom `vimrc` throughout the course.
 
 
-
 ## Like the course?
 
 Leave a feedback on my email.
