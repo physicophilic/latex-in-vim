@@ -1,20 +1,13 @@
 
 
-### What is this
+## LaTeX in Vim
 
-A course on how to do LaTeX in vim with great features.
+A course on how to utilize most powerful editor for scientific writing.
+See a video of the promised features [here](https://www.youtube.com/watch?v=hpQBHVaFE1I). 
 
+<details>
 
-### How it works
-
-I add commented code (new features' settings) and each Saturday discuss them while
-uncommenting during the class. Think of it as providing lecture notes
-during the class and discussing thereafter.  
-
-
-### What will we cover?
-
-See a video of it [here](https://www.youtube.com/watch?v=hpQBHVaFE1I). The promised features are 
+<summary>Click here for summary</summary>
 
 - Magic LaTeX conceal for preview within editor 
 - [Shortcuts](https://github.com/SirVer/ultisnips) for writing LaTeX with `\infty` power, including:
@@ -23,6 +16,15 @@ See a video of it [here](https://www.youtube.com/watch?v=hpQBHVaFE1I). The promi
     * Context aware shortcuts: `$$ ;a $$` ----> `$$ \alpha $$`, but `;a` without surrounding `$$` doesn't change. 
 - When magic conceal isn't enough: a **live** LaTeX preview using [this tool](https://github.com/iamcco/markdown-preview.nvim)
 - Vanilla LaTeX using the famous [VimTeX](https://github.com/lervag/vimtex) plugin
+
+</details>
+
+### How it works
+
+I add commented code (new features' settings) and each Saturday discuss them while
+uncommenting during the class. Think of it as providing lecture notes
+during the class and discussing thereafter.  
+
 
 ### What has been covered?
 
@@ -37,16 +39,23 @@ See a video of it [here](https://www.youtube.com/watch?v=hpQBHVaFE1I). The promi
 - Folding in vim
 - Tiny intro to VimTeX: only covering `\ll, \le, \lv, \lc` commands
 
+Now your `vim` should be compiling LaTeX. 
+
 #### Lecture 2
 
 - Concept of mappings, e.g. `nmap`. 
 - Use of `vim-plug`, installing UltiSnips
-- 2 snippet examples using UltiSnips
+- 2 snippet examples using UltiSnips (very important)
+
+Find example snippets for yourself by taking inspiration from Gilles Castel
+[here](https://github.com/gillescastel/latex-snippets)
 
 #### Lecture 1
 
 - Basic introduction to vim
 - set options like `linewidth`, `number`, `spell`, and `colorscheme`.
+
+Homework: doing `vimtutor`
 
 ### How to get started?
 
