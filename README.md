@@ -19,7 +19,7 @@ See a video of the promised features [here](https://www.youtube.com/watch?v=hpQB
 
 </details>
 
-### How it works
+### Method of teaching
 
 I add commented code (new features' settings) and each Saturday discuss them while
 uncommenting during the class. Think of it as providing lecture notes
@@ -27,6 +27,9 @@ during the class and discussing thereafter.
 
 
 ### What has been covered?
+
+<details>
+<summary>Click here to expand</summary>
 
 #### Lecture 4 (Planned)
 
@@ -43,6 +46,7 @@ Now your `vim` should be compiling LaTeX.
 
 #### Lecture 2
 
+- Moved `.vim` folder into a `git` repository for easy syncing.
 - Concept of mappings, e.g. `nmap`. 
 - Use of `vim-plug`, installing UltiSnips
 - 2 snippet examples using UltiSnips (very important)
@@ -57,11 +61,16 @@ Find example snippets for yourself by taking inspiration from Gilles Castel
 
 Homework: doing `vimtutor`
 
+</details>
+
 ### How to get started?
 
 Even if you've not attended the lectures so far, if you do the following
 steps, you'll be at least operationally prepared for the next lecture.
 
+<details>
+
+<summary>Click here to expand</summary>
 
 1. Backup pre-existing vim files if have used vim before:
 
@@ -87,6 +96,8 @@ On windows you can use the web interface.  See HTG article [here for more on clo
 To get fully prepared, you can read about stuff we've covered so far
 above.
 
+</details>
+
 ### How will you get the new commented code?
 
 As each week we'll add new features, I will add new comments to the settings file. Therefore, before each class, all attendants should `git pull` - i.e. fetch the latest changes from this online repository into their `.vim` folder.
@@ -102,19 +113,10 @@ followed by `:PlugInstall` to stay in sync with this setup.
 ### How to add your own changes?
 
 Make a file `~/.myvimrc` and add your custom settings there. 
+Here `~/` refers to your home directory.
 This file is being sourced in `vimrc` file at the end.
 
 For sake of simplicity, this will be the name of custom `vimrc` throughout the course.
-
-### How to learn vim ?
-
-Many suggestions:
-
-1. Attend the lectures.
-2. Do `vimtutor`
-3. Use `:help` command in vim for what you don't understand.
-4. Google
-5. Stack Overflow
 
 ### Like the course?
 
