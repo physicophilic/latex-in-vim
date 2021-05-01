@@ -22,13 +22,13 @@ if exists('+termguicolors')
     set termguicolors              "16 million colours' support
 endif
 
-set foldmethod=marker
-set encoding=utf8		     " required by VimTeX features
+" set foldmethod=marker
+" set encoding=utf8		     " required by VimTeX features
 
 " }}}
 " HIGHLIGHT {{{
 
-highlight Conceal guibg=bg
+" highlight Conceal guibg=bg
 
 "}}}
 " MAP {{{
@@ -55,11 +55,11 @@ endif
 "}}}}
 " LaTeX with Vim {{{2
 
-let g:tex_flavor='latex'
-let g:vimtex_fold_enabled=1
-let g:tex_conceal='abdmgs'   
-let g:tex_conceal_frac=1
-let g:vimtex_fold_manual=1
+" let g:tex_flavor='latex'
+" let g:vimtex_fold_enabled=1
+" let g:tex_conceal='abdmgs'   
+" let g:tex_conceal_frac=1
+" let g:vimtex_fold_manual=1
 
 "  }}}}
 
@@ -71,7 +71,7 @@ call plug#begin('~/.vim/plugged')
 " make sure you use single quotes
 Plug 'SirVer/ultisnips'         
 Plug 'lervag/vimtex'         
-Plug 'KeitaNakamura/tex-conceal.vim'
+" Plug 'KeitaNakamura/tex-conceal.vim'
 
 call plug#end()
 
