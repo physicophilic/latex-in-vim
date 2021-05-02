@@ -4,7 +4,6 @@
 
 let mapleader = " " 
 syntax on 	
-	
 
 " }}}
 " SET {{{
@@ -16,7 +15,9 @@ set number                           " doesn't get set by default
 set spell
 set spelllang=en_gb                  " closest to Indian
 colorscheme nord
-" set conceallevel=2
+
+"set conceallevel=1		     " conceals math
+" This option requires a vim restart
 
 if exists('+termguicolors')
     set termguicolors              "16 million colours' support
@@ -34,7 +35,7 @@ set encoding=utf8		     " required by VimTeX features
 " MAP {{{
 
 nmap <Leader>, :vs $MYVIMRC<CR>
-nmap <F5> :source $MYVIMRC<CR>
+nmap <F5> :w<CR>:source $MYVIMRC<CR>
 
 "}}}
 " LET {{{
@@ -58,8 +59,6 @@ endif
 
 "let g:tex_flavor='latex'
 "let g:vimtex_fold_enabled=1
-"let g:tex_conceal='abdmgs'   
-"let g:tex_conceal_frac=1
 "let g:vimtex_fold_manual=1
 
 "  }}}}
@@ -69,10 +68,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-" make sure you use single quotes
 Plug 'SirVer/ultisnips'         
 Plug 'lervag/vimtex'         
-"Plug 'KeitaNakamura/tex-conceal.vim'
 
 call plug#end()
 
