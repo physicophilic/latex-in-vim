@@ -16,7 +16,7 @@ set spell
 set spelllang=en_gb                  " closest to Indian
 colorscheme nord
 
-"set conceallevel=1		     " conceals math
+"set conceallevel=2		     " conceals math
 " This option requires a vim restart
 
 if exists('+termguicolors')
