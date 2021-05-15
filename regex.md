@@ -5,9 +5,11 @@ Goal: To learn how to manipulate text easily.
 
 ## Sample text
 
-The purpose of our lives is to be happy. — Dalai Lama
-Life is what happens when you’re busy making other plans. — John Lennon
-Your time is limited, so don't waste it living someone else's life. – Steve Jobs
+The purpose of our lives dog cat be happy. — Dalai Lama
+Life dog what happens when you’re busy making other plans. — John Lennon
+Your time dog limited, so don't waste it living someone else's life. – Steve Jobs
+
+`s/\([A-Z])\/\l\1/g`
 
 - [Normal replacements] (`s/word/some_other_word/g`)
 - [Delete all the capitals] (`s/[A-Z]//g`) 

@@ -16,7 +16,7 @@ set spell
 set spelllang=en_gb                  " closest to Indian
 colorscheme nord
 
-"set conceallevel=2		     " conceals math
+set conceallevel=2		     " conceals math
 " This option requires a vim restart
 
 if exists('+termguicolors')
@@ -29,7 +29,8 @@ set encoding=utf8		     " required by VimTeX features
 " }}}
 " HIGHLIGHT {{{
 
-"highlight Conceal guibg=bg
+highlight Conceal guibg=bg 
+
 
 "}}}
 " MAP {{{
@@ -57,9 +58,9 @@ endif
 "}}}
 " LaTeX with Vim {{{2
 
-"let g:tex_flavor='latex'
-"let g:vimtex_fold_enabled=1
-"let g:vimtex_fold_manual=1
+let g:tex_flavor='latex'
+let g:vimtex_fold_enabled=1
+let g:vimtex_fold_manual=1
 
 "  }}}}
 
