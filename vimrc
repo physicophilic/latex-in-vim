@@ -14,7 +14,9 @@ set mouse=a                          " optional: enable mouse everywhere
 set number                           " doesn't get set by default
 set spell
 set spelllang=en_gb                  " closest to Indian
+"set wildmenu			     " A menu for tabbing
 colorscheme nord
+
 
 set conceallevel=2		     " conceals math
 " This option requires a vim restart
@@ -37,6 +39,18 @@ highlight Conceal guibg=bg
 
 nmap <Leader>, :vs $MYVIMRC<CR>
 nmap <F5> :w<CR>:source $MYVIMRC<CR>
+"nmap <Leader>, :UltiSnipsEdit<CR>
+
+"Recommended mappings - quick movement between splits 
+"nmap <C-h> <C-w><C-h>
+"nmap <C-l> <C-w><C-l>
+"nmap <C-k> <C-w><C-k>
+"nmap <C-j> <C-w><C-j>
+
+" After installing fzf 
+"nmap <Leader>ff :Files<CR>
+"nmap <Leader>fr :History<CR>
+"nmap <Leader>fh :Helptags<CR>
 
 "}}}
 " LET {{{
@@ -71,6 +85,29 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'SirVer/ultisnips'         
 Plug 'lervag/vimtex'         
+
+" Essentials:
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }   "fuzzy name filter
+" Plug 'junegunn/fzf.vim'			       "very quickly open files
+" Plug 'junegunn/goyo.vim' 			" focused writing
+" Plug 'junegunn/limelight.vim'			" super focused writing
+
+" Extras:
+" Plug 'luochen1990/rainbow'	  " rainbow colours for parentheses
+
+" Managing notes:
+" Plug 'lervag/wiki.vim' 	 " by vimtex author, modular   OR
+" Plug 'vimwiki/vimwiki'	 " lots of features; may be complicated OR
+" Plug 'fiatjaf/neuron.vim' 	 " simpler; needs neuron
+
+" When you get irritated, be sure to look into these
+" Plug 'tpope/vim-commentary'     " quickly (un)commenting
+" Plug 'tpope/vim-eunuch'         " utility functions
+" Plug 'tpope/vim-fugitive'       " for using git
+" Plug 'tpope/vim-repeat'         " supercharging dot command
+" Plug 'tpope/vim-surround'       " surrounding expressions with [({$ etc.
+" Plug 'tpope/vim-unimpaired'     " more utility functions
+
 
 call plug#end()
 
