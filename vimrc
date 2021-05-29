@@ -9,23 +9,23 @@ syntax on
 " SET {{{
 
 set autoindent                               
-set linebreak 			     " Wrap lines; last word gets shifted
+set linebreak 			             " Wrap lines; last word gets shifted
 set mouse=a                          " optional: enable mouse everywhere
 set number                           " doesn't get set by default
 set spell
 set spelllang=en_gb                  " closest to Indian
-"set wildmenu			     " A menu for tabbing
+set wildmenu			             " A menu for tabbing
 colorscheme nord
 
 
-set conceallevel=2		     " conceals math
+set conceallevel=2		            " conceals math
 
 if exists('+termguicolors')
     set termguicolors              "16 million colours' support
 endif
 
 set foldmethod=marker
-set encoding=utf8		     " required by VimTeX features
+set encoding=utf8		           " required by VimTeX features
 
 " }}}
 " HIGHLIGHT {{{
@@ -41,17 +41,16 @@ nmap <F5> :w<CR>:source $MYVIMRC<CR>
 "nmap <Leader>, :UltiSnipsEdit<CR>
 
 " After installing fzf and wiki
-"nmap <Leader>ff :Files<CR>
-"nmap <Leader>fr :History<CR>
-"nmap <Leader>fh :Helptags<CR>
-"
-"nmap <Leader>fw <plug>(wiki-fzf-pages)
+nmap <Leader>ff :Files<CR>
+nmap <Leader>fr :History<CR>
+nmap <Leader>fh :Helptags<CR>
+nmap <Leader>fw <plug>(wiki-fzf-pages)
 
 "Recommended mappings - quick movement between splits 
-"nmap <C-h> <C-w><C-h>
-"nmap <C-l> <C-w><C-l>
-"nmap <C-k> <C-w><C-k>
-"nmap <C-j> <C-w><C-j>
+nmap <C-h> <C-w><C-h>
+nmap <C-l> <C-w><C-l>
+nmap <C-k> <C-w><C-k>
+nmap <C-j> <C-w><C-j>
 
 
 "}}}
@@ -79,12 +78,11 @@ let g:vimtex_fold_enabled=1
 let g:vimtex_fold_manual=1
 
 "  }}}
-
 " Wiki {{{2
 
-"let g:wiki_root = '~/.vim/wiki'        "where are your notes
-"let g:wiki_link_extension = '.tex'     "what extension
-"let g:wiki_filetypes = ['tex']         "what format (not always = ext)
+let g:wiki_root = '~/.vim/wiki'        "where are your notes
+let g:wiki_link_extension = '.tex'     "what extension
+let g:wiki_filetypes = ['tex']         "what format (not always = ext)
 
 " }}}
 
@@ -102,7 +100,7 @@ Plug 'lervag/vimtex'
 " Plug 'junegunn/fzf.vim'			       "very quickly open files
 
 " Organizing notes
-" Plug 'lervag/wiki.vim' 	 " by vimtex author, modular   
+Plug 'lervag/wiki.vim' 	 " by vimtex author, modular   
 "  -------------- OR ----------------------------
 " Plug 'fiatjaf/neuron.vim' 	 " simpler; needs neuron - check if you like.
 
