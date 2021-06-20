@@ -35,5 +35,5 @@ On windows you can use the web interface.  See HTG article [here for more on clo
 
 ### Self promotion
 
-Like the setup? Star the repository. Love it? Email and let me know!
+Like the setup? Star the repository. Love it? Follow me on Github and Twitter @physicophilic
 
