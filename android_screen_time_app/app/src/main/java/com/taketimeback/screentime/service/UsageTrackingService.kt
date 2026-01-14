@@ -113,7 +113,7 @@ class UsageTrackingService : Service() {
                         date = startTime,
                         totalTimeMillis = totalTime,
                         lastUsedTimestamp = latestStat.lastTimeUsed,
-                        launchCount = latestStat.totalTimeForeground.toInt()
+                        launchCount = 0  // Launch count not directly available from UsageStats
                     )
                 } catch (e: PackageManager.NameNotFoundException) {
                     null

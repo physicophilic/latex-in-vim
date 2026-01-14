@@ -77,8 +77,8 @@ fun MainScreen(
 
     val items = listOf(
         NavigationItem("Dashboard", Icons.Default.Home, "dashboard"),
-        NavigationItem("Statistics", Icons.Default.Analytics, "statistics"),
-        NavigationItem("Blocker", Icons.Default.Block, "blocker"),
+        NavigationItem("Statistics", Icons.Default.BarChart, "statistics"),
+        NavigationItem("Blocker", Icons.Default.DoNotDisturb, "blocker"),
         NavigationItem("Settings", Icons.Default.Settings, "settings")
     )
 
