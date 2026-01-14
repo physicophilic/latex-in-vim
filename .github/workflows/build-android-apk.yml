@@ -1,0 +1,54 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ claude/screen-time-app-W7v68, main ]
+    paths:
+      - 'android_screen_time_app/**'
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x android_screen_time_app/gradlew
+
+    - name: Create Gradle wrapper
+      working-directory: android_screen_time_app
+      run: |
+        if [ ! -f "gradlew" ]; then
+          gradle wrapper --gradle-version=8.2
+        fi
+
+    - name: Build Debug APK
+      working-directory: android_screen_time_app
+      run: ./gradlew assembleDebug
+
+    - name: Upload APK as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: TakeTimeBack-debug
+        path: android_screen_time_app/app/build/outputs/apk/debug/app-debug.apk
+        retention-days: 30
+
+    - name: Get APK info
+      working-directory: android_screen_time_app
+      run: |
+        ls -lh app/build/outputs/apk/debug/app-debug.apk
+        echo "✅ APK built successfully!"
